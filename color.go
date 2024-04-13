@@ -89,7 +89,7 @@ func ConvertToRGB(c Color) colorful.Color {
 }
 
 // Sequence returns the ANSI Sequence for the color.
-func (c NoColor) Sequence(_ bool) string {
+func (c NoColor) Sequence() string {
 	return ""
 }
 
