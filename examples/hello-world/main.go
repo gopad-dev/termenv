@@ -15,11 +15,16 @@ func main() {
 
 	p := termenv.ColorProfile()
 
-	fmt.Printf("\n\t%s %s %s %s %s",
+	fmt.Printf("\n\t%s %s %s %s %s %s %s %s %s %s",
 		termenv.String("bold").Bold(),
 		termenv.String("faint").Faint(),
 		termenv.String("italic").Italic(),
-		termenv.String("underline").Underline(),
+		termenv.String("underline").Underline(p.Color("#E88388")),
+		termenv.String("underdouble").Underdouble(),
+		termenv.String("undercurl").Undercurl(),
+		termenv.String("underdot").Underdot(),
+		termenv.String("underdash").Underdash(),
+		termenv.String("overline").Overline(),
 		termenv.String("crossout").CrossOut(),
 	)
 
